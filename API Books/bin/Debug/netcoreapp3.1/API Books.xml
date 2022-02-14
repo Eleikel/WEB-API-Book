@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API Books</name>
+    </assembly>
+    <members>
+        <member name="M:API_Books.Controllers.BookController.GetAll">
+            <summary>
+            Get all the books
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API_Books.Controllers.BookController.Get(System.Int32)">
+            <summary>
+            Get book by an ID
+            </summary>
+            <param name="BookId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_Books.Controllers.BookController.SearchBook(System.String)">
+            <summary>
+            Search for a specific book by it's name
+            </summary>
+            <param name="bookName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_Books.Controllers.BookController.Insert(API_Books.Models.Dtos.BookDto)">
+            <summary>
+            Insert/Create a new book
+            </summary>
+            <param name="bookDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_Books.Controllers.BookController.Update(System.Int32,API_Books.Models.Dtos.BookDto)">
+            <summary>
+            Update an existing book
+            </summary>
+            <param name="bookId"></param>
+            <param name="bookDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_Books.Controllers.BookController.Delete(System.Int32)">
+            <summary>
+            Delete a book and existing book
+            </summary>
+            <param name="bookId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

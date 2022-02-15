@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace API_Books.Models
 {
+#pragma warning disable CS1591 // Falta el comentario XML para el tipo o miembro visible públicamente
     public class Book
     {
         [Key]
@@ -17,4 +18,5 @@ namespace API_Books.Models
         public double Price { get; set; }
        
     }
+#pragma warning restore CS1591 // Falta el comentario XML para el tipo o miembro visible públicamente
 }

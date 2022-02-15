@@ -32,25 +32,18 @@ namespace API_Books.Repository
 
         public Task<bool> ExistsBook(string BookName)
         {
-            bool value = _db.Book.Any(a => a.Title.Trim().ToLower() == BookName.Trim().ToLower());
-            //return Task.FromResult(value);
-            //bool value = _db.Book.Any(a => a.Title.ToLower().Trim() == BookName.ToLower().Trim());
+            bool value = _db.Book.Any(a => a.Title.Trim().ToLower() == BookName.Trim().ToLower());          
             return Task.FromResult(value);
         }
 
         public Task<bool> ExistsBook(int BookId)
-        {
-            //bool value = _db.Book.Any(a => a.ID == BookId);
-            //return Task.FromResult(value);
+        {            
             return Task.FromResult(_db.Book.Any(c => c.ID == BookId));
         }
 
         public async Task<Book> Get(int BookId)
         {
             return await _db.Book.FindAsync(BookId);
-
-
-            //return (ICollection<Book>) await _db.Book.FirstOrDefaultAsync(c => c.ID == BookId);
         }
 
         public async Task<ICollection<Book>> GetAll()
